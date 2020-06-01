@@ -1,0 +1,19 @@
+[package]
+authors = ["shellbear <shellbear@protonmail.com>"]
+edition = "2018"
+name = "godeo"
+version = "0.1.0"
+[dependencies]
+clap = "3.0.0-beta.1"
+reqwest = { version = "0.10.6", features = ["blocking"] }
+tempfile = "3.1.0"
+url = "2.1.1"
+log = "0.4.8"
+bus = "2.2.3"
+bytesize = "1.0.1"
+
+[dependencies.ffmpeg]
+branch = "master"
+default-features = true
+git = "https://github.com/shellbear/rust-ffmpeg"
+version = "0.2.0-alpha.2"
